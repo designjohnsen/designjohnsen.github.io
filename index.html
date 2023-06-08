@@ -4,11 +4,12 @@
   <title>Fredrik Johnsen - Game Design Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
     <nav>
-        <h1><a href="index.html">Fredrik Johnsen</a></h1>
+      <h1><a href="index.html" id="typed-text"></a><span class="cursor">|</span></h1>
         <ul>
             <li>
               <a>Games</a>
@@ -25,7 +26,7 @@
 
     <main class="FontpageOuterContainer">
       <section id="games">
-        <h1>Games</h1>
+        <h1 class="title-container">Games</h1>
         
         <div class="grid-container">
 
@@ -54,7 +55,7 @@
 
 
       <section id="olderprojects">
-        <h1>More Projects</h1>
+        <h1 class="title-container">More Projects</h1>
 
         <div class="grid-container-minimal">
           <article>
@@ -94,6 +95,15 @@
           </article>
 
           <article>
+            <img src="images/crt-250.png" alt="Short description of image">
+            <div class="text-content">
+              <h3>Ceartee</h3>
+              <p>Game Designer / Artist</p>
+              <p>Unity, C#, Blender</p>
+            </div>
+          </article>
+
+          <article>
             <img src="images/ta-250.png" alt="Short description of image">
             <div class="text-content">
               <h3>Trashaway</h3>
@@ -103,10 +113,19 @@
           </article>
 
           <article>
+            <img src="images/mcm-250.png" alt="Short description of image">
+            <div class="text-content">
+              <h3>My Cute Monster</h3>
+              <p>Solo-Project</p>
+              <p>Unity, C#, Blender</p>
+            </div>
+          </article>
+
+          <article>
             <img src="images/gtf-250.png" alt="Short description of image">
             <div class="text-content">
               <h3>Guide The Flame</h3>
-              <p>Programmer / Game Designer</p>
+              <p>Solo-Project</p>
               <p>Unity, C#, Blender</p>
             </div>
           </article>
@@ -115,8 +134,8 @@
       </section>
 
       <section id="contact">
-          <h1>Contact</h1>
-          <p>designjohnsen@gmail.com</p>
+          <h1 class="title-container">Contact</h1>
+          <a style="text-decoration: none;" href = "mailto: abc@example.com">designjohnsen@gmail.com</a>
       </section>
         
     </main>

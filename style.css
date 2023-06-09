@@ -110,7 +110,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: calc(100% - 250px);
+  width: 100%;
 }
 
 .copyright-text p{
@@ -118,6 +118,8 @@ a {
   padding: 0;
   display: flex;
   justify-content: center;
+  opacity: 40%;
+  font-size: x-small;
 }
 
 .cursor {
@@ -170,6 +172,12 @@ nav ul li:hover > ul {
   margin: 0;
 }
 
+.container-detailed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
 
 .container-detailed h1 {
   background-color:rgb(3, 3, 3);
@@ -192,6 +200,12 @@ nav ul li:hover > ul {
     gap: 15px;
     font-size: small;
   }
+  
+  .grid-container article img {
+    width: 100%;
+    height: 70%; 
+    object-fit: cover;
+  }
 
   .card {
     width: 100%;
@@ -210,6 +224,11 @@ nav ul li:hover > ul {
   nav ul li:hover .dropdown {
     display: none;
   }
+
+  .project-detail {
+  grid-template-columns: 1fr;
+  }
+  
 }
 
 @media screen and (max-width: 1400px) {
@@ -269,5 +288,12 @@ nav ul li:hover > ul {
 
 .title-container {
   line-height: 2;
+  width: 100%;
 }
 
+
+.project-detail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
